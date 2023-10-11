@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Text Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #734f9a;
+            scroll-behavior: smooth;
+        }
+
+        a.text3d {
+            font-style: normal;
+            font-size: 300px;
+            font-weight: bold;
+            color: transparent;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            word-wrap: break-word;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            text-indent: 0;
+            text-shadow: 
+                3px 3px 0px #8bd45036, 
+                6px 6px 0px #965fd431,
+                9px 9px 0px #1d1a2f28;
+            text-overflow: ellipsis;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            min-width: 50px;
+            min-height: 25px;
+            margin: 20px;
+            padding: 10px;
+            border-color: #222;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            background-color: transparent;
+            background-image: url(Eva-01.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: inline-block;
+            position: relative;
+            float: none;
+            clear: both;
+            z-index: 1;
+            opacity: 0.9;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2), 0px 0px 5px rgba(0,0,0,0.1) inset;
+            cursor: pointer;
+            overflow: hidden;
+            list-style-type: none;
+            filter: none;
+            transition: transform 0.5s;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        a.text3d:hover {
+            transform: translateZ(100px);
+        }
+
+        a.text3d:active {
+            transform: translateZ(5px);
+        }
+
+        @media (max-width: 768px) {
+            a.text3d {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="newpage.html" class="text3d">Eva-01</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA-01</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: #734f9a;
+            font-family: Arial, sans-serif;
+        }
+
+        .text3D {
+            font-size: 750px;
+            font-weight: bold;
+            color: transparent;
+            background-image: url(Eva-01.jpg);
+            background-clip: text;
+            -webkit-background-clip: text;
+            cursor: pointer;
+            transition: transform 0.20s;
+        }
+
+        .text3D:hover {
+            transform: perspective(400px) translateZ(20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="text3D" onclick="location.href='https://example.com'">Eva-01</div>
+</body>
+</html>
